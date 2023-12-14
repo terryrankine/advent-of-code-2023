@@ -30,12 +30,10 @@ def find_intersect(input):
         else:
             print("No sets found in the input string.")
         
-    print (runningtotal, winningcards)
-    
+    print ('runningtotal', runningtotal)
     finaldict={}
     
     for cardnum,orijwins,k in winningcards:
-        print('card', cardnum)
         if cardnum in finaldict.keys():
             finaldict[cardnum] += 1
             cardcount = finaldict[cardnum]
@@ -50,7 +48,7 @@ def find_intersect(input):
                 else:
                     finaldict[card] = 1
 
-    print (sum(finaldict.values()))
+    print ('number of cards:' , sum(finaldict.values()))
 
 
 
